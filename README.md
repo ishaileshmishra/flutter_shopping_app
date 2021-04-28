@@ -8,6 +8,5 @@ This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-<img src="https://github.com/ishaileshmishra/flutter_shopping_app/blob/main/assets/images/home.png?raw=true" width="350" height="600" />
+<img src="https://github.com/ishaileshmishra/flutter_shopping_app/blob/main/assets/images/home.png?raw=true" width="300" height="650" />
 
-[![Watch the video](https://github.com/ishaileshmishra/flutter_shopping_app/blob/main/assets/images/home.png?raw=true, )](https://www.youtube.com/watch?v=b8TGCuxZr2g)
