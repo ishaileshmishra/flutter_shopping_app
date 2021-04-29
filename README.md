@@ -1,6 +1,6 @@
 ## flutter_shopping_app
 
-A complete Flutter Shopping application project.
+A complete flutter Shopping application project.
 
 ### Getting Started
 
