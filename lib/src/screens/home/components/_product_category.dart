@@ -1,75 +1,63 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shopping_app/constants.dart';
 
+class Categories extends StatefulWidget {
 
-class ProductCategory extends StatefulWidget {
-  const ProductCategory({
-    Key key,
-    @required this.categories,
-  }) : super(key: key);
+  Categories({Key key, this.categories}) : super(key: key);
 
   final List categories;
 
   @override
-  _ProductCategoryState createState() => _ProductCategoryState();
+  _CategoriesState createState() => _CategoriesState();
 }
 
-class _ProductCategoryState extends State<ProductCategory> {
-
+class _CategoriesState extends State<Categories> {
+  // By default our first item will be selected
   int selectedIndex = 0;
-
-  @override
-  void initState() {
-    setState(() {
-      selectedIndex = 0;
-    });
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
-
-    List categories = widget.categories;
-    return Container(
-      height: 50,
-      child: ListView.builder(
-          itemCount: categories.length,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20.0),
+      child: SizedBox(
+        height: 28,
+        child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context, position) {
-            return InkWell(
-              onTap: (){
-                print(categories[position]);
-                setState(() {
-                  selectedIndex = position;
-                });
-              } ,
-              child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: Card(
-                  elevation: 2,
-                  child: Container(
-                    height: 60,
-                    width: 130,
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        border: position == selectedIndex
-                            ? Border.all(
-                            color: Colors.deepPurple,
-                            width: 1
-                        ): Border.all(
-                          color: Colors.grey.shade300,
-                        ),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Center(
-                      child: Text(
-                        categories[position].toString().toUpperCase(),
-                        style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.deepPurple),
-                      ),
-                    ),
-                  ),
-                ),
+          itemCount: widget.categories.length,
+          itemBuilder: (context, index) => buildCategory(index),
+        ),
+      ),
+    );
+  }
+
+  Widget buildCategory(int index) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selectedIndex = index;
+        });
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              widget.categories[index],
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                wordSpacing: 1,
+                color: selectedIndex == index ? Colors.teal : kTextLightColor,
               ),
-            );
-          }),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 20.0 / 4), //top padding 5
+              height: 2,
+              width: 40,
+              color: selectedIndex == index ? Colors.teal : Colors.transparent,
+            )
+          ],
+        ),
+      ),
     );
   }
 }

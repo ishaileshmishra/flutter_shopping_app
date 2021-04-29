@@ -21,8 +21,7 @@ class HomeBody extends StatelessWidget {
         SearchBox(onChanged: (value) {
           print('Searching for..$value');
         }),
-        ProductCategory(categories: categories),
-        SizedBox(height: 10),
+        Categories(categories: categories),
         Flexible(child: buildProductGridView(context, products))
       ],
     );

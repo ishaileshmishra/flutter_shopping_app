@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_shopping_app/src/models/products.dart';
-import 'package:flutter_shopping_app/src/screens/details/components/body.dart';
-import 'package:flutter_shopping_app/src/screens/details/components/detail_app_bar.dart';
+import '../../models/products.dart';
+import 'components/body.dart';
+import 'components/detail_app_bar.dart';
 
 class ProductDetail extends StatelessWidget {
   ProductDetail({Key key, this.product}) : super(key: key);

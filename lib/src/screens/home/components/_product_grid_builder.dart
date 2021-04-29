@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/src/screens/details/details_screen.dart';
 
@@ -30,7 +32,6 @@ Card gridCardItem(context, item) {
     elevation: 2,
     child: GestureDetector(
       onTap: () {
-        print(item.title);
         Navigator.push(
             context,
             MaterialPageRoute(
@@ -46,7 +47,7 @@ Card gridCardItem(context, item) {
               child: Text(
                 item.title,
                 maxLines: 1,
-                style: TextStyle(fontSize: 12),
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
               )),
         ),
         child: Hero(
