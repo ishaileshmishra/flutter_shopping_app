@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'src/screens/home/home_screen.dart' show HomePage;
 import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
+
+import 'src/screens/home/home_screen.dart' show HomePage;
 
 void main() {
   runApp(ShoppingApp());
