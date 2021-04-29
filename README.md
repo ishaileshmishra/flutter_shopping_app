@@ -6,6 +6,10 @@ A complete Flutter Shopping application project.
 
 This project is a starting point for a Flutter application.
 
+
+![Alt Text](https://github.com/ishaileshmishra/flutter_shopping_app/blob/main/assets/gif/shoppingapp.gif?raw=true" width="300" height="680)
+
+
 A few resources to get you started if this is your first Flutter project:
 
 <img src="https://github.com/ishaileshmishra/flutter_shopping_app/blob/main/assets/images/login.png?raw=true" width="300" height="650" />
