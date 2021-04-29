@@ -12,7 +12,7 @@ This project is a starting point for a Flutter application.
 
 ### Watch:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=LTc2vIA34ds "Video Title")
+[![Watch the video](https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg)](https://www.youtube.com/watch?v=LTc2vIA34ds "Everything Is AWESOME")
 
 
 
