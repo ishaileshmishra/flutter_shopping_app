@@ -31,14 +31,14 @@ AppBar homeActionBar(context) {
           Text(
             'Buy. Think. Grow',
             style: TextStyle(
-                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.teal),
+                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.indigo),
           ),
           Text(
             'A few clicks is all it takes.',
             style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.normal,
-                color: Colors.teal),
+                color: Colors.indigo),
           )
         ],
       ),
