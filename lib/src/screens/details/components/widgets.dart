@@ -41,19 +41,18 @@ Row buildThumbnailRow(product) {
 
 Row rowRating() {
   return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Icon(
-          Icons.star,
-          color: Colors.amber,
-          size: 20,
-        ),
-        SizedBox(width: 4),
-        Text('4.7',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
-      ],
-    );
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
+      Icon(
+        Icons.star,
+        color: Colors.amber,
+        size: 20,
+      ),
+      SizedBox(width: 4),
+      Text('4.7', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+    ],
+  );
 }
 
 Row buildRowBtnPrice(context, Product product) {
@@ -93,9 +92,7 @@ BoxDecoration boxDecoration() {
       color: Colors.grey.shade300,
     ),
     borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(30),
-        topRight: Radius.circular(30)
-    ),
+        topLeft: Radius.circular(30), topRight: Radius.circular(30)),
   );
 }
 

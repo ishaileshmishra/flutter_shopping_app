@@ -21,4 +21,3 @@ AppBar detailAppBar(context) {
     ],
   );
 }
-

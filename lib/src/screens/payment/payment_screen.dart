@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'components/btn_bottom_checkout.dart';
 import 'components/checkout_actionbar.dart';
 import 'components/wallet_options_list.dart';
@@ -24,11 +25,11 @@ class PaymentGateway extends StatelessWidget {
                       return Padding(
                         padding: EdgeInsets.all(8.0),
                         child: ExpansionTile(
-                            title: Text(
-                          paymentOptions[index].title,
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
+                          title: Text(
+                            paymentOptions[index].title,
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
                           children: [
                             buildPaymentList(paymentOptions, index),
                             buildPaymentList(paymentOptions, 3),

@@ -5,7 +5,6 @@ Row buildRowPriceRating(product) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
-
       RatingBarIndicator(
         rating: 3.75,
         itemBuilder: (context, index) => Icon(
@@ -16,8 +15,6 @@ Row buildRowPriceRating(product) {
         itemSize: 25.0,
         direction: Axis.horizontal,
       ),
-
-
       Text("Price: \$${product.price}",
           maxLines: 3,
           softWrap: true,
@@ -25,7 +22,6 @@ Row buildRowPriceRating(product) {
             fontSize: 18,
             fontWeight: FontWeight.bold,
           )),
-
     ],
   );
 }

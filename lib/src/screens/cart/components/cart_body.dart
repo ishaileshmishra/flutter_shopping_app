@@ -1,7 +1,9 @@
 import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/src/screens/cart/components/btn_bottom.dart';
+
 import '../../../../apis.dart';
 import 'banner_container.dart';
 

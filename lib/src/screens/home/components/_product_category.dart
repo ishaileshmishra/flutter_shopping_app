@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/constants.dart';
 
 class Categories extends StatefulWidget {
-
   Categories({Key key, this.categories}) : super(key: key);
 
   final List categories;
@@ -14,6 +13,7 @@ class Categories extends StatefulWidget {
 class _CategoriesState extends State<Categories> {
   // By default our first item will be selected
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(

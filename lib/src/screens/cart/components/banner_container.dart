@@ -38,13 +38,8 @@ Container buildBannerContainer() {
           ),
           Spacer(),
           VerticalDivider(
-              thickness: 2,
-              color: Colors.grey,
-              indent: 10,
-              endIndent: 10),
-
+              thickness: 2, color: Colors.grey, indent: 10, endIndent: 10),
           Spacer(),
-
           Text('Use Code Ecommerce Amazon \nat checkout')
         ],
       ),

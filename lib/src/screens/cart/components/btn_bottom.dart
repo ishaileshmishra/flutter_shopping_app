@@ -33,10 +33,8 @@ Align buildAlignBtnBottom(BuildContext context) {
           Spacer(),
           ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => PaymentGateway()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PaymentGateway()));
               },
               style: ElevatedButton.styleFrom(
                 shape: new RoundedRectangleBorder(

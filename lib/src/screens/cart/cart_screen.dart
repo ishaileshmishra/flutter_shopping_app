@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'components/action_bat_cart.dart';
 import 'package:flutter_shopping_app/src/screens/cart/components/cart_body.dart';
+
+import 'components/action_bat_cart.dart';
 
 class ProductCart extends StatefulWidget {
   ProductCart({Key key}) : super(key: key);

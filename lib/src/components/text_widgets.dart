@@ -34,9 +34,11 @@ TextStyle xxLargeText = GoogleFonts.ptSans(
 ElevatedButton buildElevatedButton(label) {
   return ElevatedButton(
       onPressed: () {},
-      style: ElevatedButton.styleFrom(shape: new RoundedRectangleBorder(
-        borderRadius: new BorderRadius.circular(30.0),
-      ),),
+      style: ElevatedButton.styleFrom(
+        shape: new RoundedRectangleBorder(
+          borderRadius: new BorderRadius.circular(30.0),
+        ),
+      ),
       child: Text(label, style: TextStyle(fontSize: 20)));
 }
 
@@ -44,7 +46,7 @@ Padding backNavIcon(context) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: InkWell(
-      onTap: ()=> Navigator.pop(context),
+      onTap: () => Navigator.pop(context),
       child: CircleAvatar(
           backgroundColor: Colors.grey.shade300,
           child: Icon(

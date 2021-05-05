@@ -1,4 +1,3 @@
-
 class PayCard {
   String title;
   String description;
@@ -8,7 +7,6 @@ class PayCard {
 }
 
 List<PayCard> getPaymentOptions() {
-
   List<PayCard> cards = [];
 
   cards.add(new PayCard(

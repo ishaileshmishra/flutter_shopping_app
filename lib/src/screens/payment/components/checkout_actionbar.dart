@@ -2,23 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/src/components/text_widgets.dart';
 import 'package:flutter_shopping_app/src/screens/payment/components/wallet_options_list.dart';
 
-
 AppBar buildCheckoutAppBar(BuildContext context) {
   return AppBar(
     backgroundColor: Colors.white,
     elevation: 0,
-    title: Text('Checkout (\$ 128.00)',
+    title: Text(
+      'Checkout (\$ 128.00)',
       style: TextStyle(
         color: Colors.indigo,
         fontSize: 18,
         fontWeight: FontWeight.bold,
-      ),),
-
+      ),
+    ),
     centerTitle: false,
     leading: backNavIcon(context),
   );
 }
-
 
 ListTile buildPaymentList(List<PayCard> paymentOptions, int index) {
   return ListTile(
