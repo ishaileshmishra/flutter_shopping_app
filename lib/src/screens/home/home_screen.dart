@@ -18,9 +18,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var fakeProducts = [];
   List categories = [];
+  var subscription;
 
   @override
   void initState() {
+    // subscription = Connectivity()
+    //     .onConnectivityChanged
+    //     .listen((ConnectivityResult result) {
+    //   // Got a new connectivity status!
+    //   _loadData();
+    // });
+
+    _loadData();
+    super.initState();
+  }
+
+  void _loadData() async {
     getCategories().then((items) {
       setState(() {
         categories = items;
@@ -33,8 +46,12 @@ class _HomePageState extends State<HomePage> {
         fakeProducts = items;
       });
     });
+  }
 
-    super.initState();
+  @override
+  dispose() {
+    super.dispose();
+    subscription.cancel();
   }
 
   @override
